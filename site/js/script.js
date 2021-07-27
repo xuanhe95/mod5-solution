@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // *** start ***
 // On first load, show home view
 
-//获取建立Home的Html
+//获取目录URL,定义buildAndShowHomeHtml
 
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -142,6 +142,8 @@ function buildAndShowHomeHTML (categories) {
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
+
+      //奖homeHtmlToInserIntoMainPage插入main-content
 
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage)
 
